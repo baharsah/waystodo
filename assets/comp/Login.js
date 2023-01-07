@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Image , Text} from "react-native";
 import { useFonts } from 'expo-font';
 import ImageRegister from "./ImageRegister";
+import { useNavigation } from "@react-navigation/native";
 function Login() {
 
   const navigation = useNavigation();

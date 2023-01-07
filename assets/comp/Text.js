@@ -46,7 +46,7 @@ function Cap() {
 
         </Stack>
         <Stack>
-<Text style={{ fontFamily : "PTSans-Bold" , marginTop: 10 , fontSize : 20 }}>Sudah Punya akun? <Text onPress={() => navigation.navigate('Register')} style={{ color : "red" ,marginTop: 10 , fontSize : 20}}>Loginlah! </Text>  </Text> 
+<Text style={{ fontFamily : "PTSans-Bold" , marginTop: 10 , fontSize : 20 }}>Sudah Punya akun? <Text onPress={() => navigation.navigate('Login')} style={{ color : "red" ,marginTop: 10 , fontSize : 20}}>Loginlah! </Text>  </Text> 
 
         </Stack>
       </Stack>
