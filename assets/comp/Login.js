@@ -4,27 +4,15 @@ import React, { useState } from "react";
 import { Image , Text} from "react-native";
 import { useFonts } from 'expo-font';
 import ImageRegister from "./ImageRegister";
-import { useNavigation } from "@react-navigation/native";
+function Login() {
 
-
-
-
-
-
-
-function Cap() {
   const navigation = useNavigation();
-
-
-  const [fontsLoaded] = useFonts({
-    'PTSans-Bold': require('../PTSans-Bold.ttf'),
-  });
 
   return (
     <ScrollView style={{margin : 30}}>
 
      <ImageRegister></ImageRegister>
-    <Text style={{fontFamily : "PTSans-Bold"  ,fontWeight : "bold" , fontSize : 40 , textAlign : "center"}}>Register</Text>
+    <Text style={{fontFamily : "PTSans-Bold"  ,fontWeight : "bold" , fontSize : 40 , textAlign : "center"}}>login</Text>
     <FormControl>
       <Stack space={5}>
         <Stack>
@@ -41,12 +29,12 @@ function Cap() {
         </Stack>
         <Stack>
         <Button style={{ }} colorScheme={"warning"}>
-  <Text style={{ color : "white" , fontWeight : "bold" , fontSize : 20}}>Register</Text>
+  <Text style={{ color : "white" , fontWeight : "bold" , fontSize : 20}}>login</Text>
 </Button>
 
         </Stack>
         <Stack>
-<Text style={{ fontFamily : "PTSans-Bold" , marginTop: 10 , fontSize : 20 }}>Sudah Punya akun? <Text onPress={() => navigation.navigate('Register')} style={{ color : "red" ,marginTop: 10 , fontSize : 20}}>Loginlah! </Text>  </Text> 
+<Text style={{ fontFamily : "PTSans-Bold" , marginTop: 10 , fontSize : 20 }}>Belum Punya akun? <Text onPress={() => navigation.navigate('Register')}  style={{ color : "red" ,marginTop: 10 , fontSize : 20}}> Daftarlah! </Text>  </Text> 
 
         </Stack>
       </Stack>
@@ -55,4 +43,4 @@ function Cap() {
   )
 }
 
-export default Cap
+export default Login

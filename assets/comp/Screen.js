@@ -28,10 +28,10 @@ function Screen() {
         
         color : "#E64C4C" ,  fontFamily : "PTSans-Bold" ,textAlign : "center" , fontSize : 50 , margin : 10}}>WaysTodo</Text>
       <Text style={{fontFamily : "PTSans-Bold" , textAlign : "center" , margin:10 , fontSize : 14 , marginBottom : 90}}>Doing your deserve best do</Text>
-          <Button style={{margin : 10 }} colorScheme={"warning"}>
+          <Button onPress={() => navigation.navigate('Login')} style={{margin : 10 }} colorScheme={"warning"}>
   <Text style={{ fontFamily : "PTSans-Bold" , color : "white" , fontWeight : "bold" , fontSize : 20}}>Login</Text>
 </Button>
-<Button onPress={() => navigation.navigate('ItemList')} style={{margin : 10}} variant="outline" colorScheme={"warning"}>
+<Button onPress={() => navigation.navigate('Register')} style={{margin : 10}} variant="outline" colorScheme={"warning"}>
   <Text style={{fontFamily : "PTSans-Bold" , color : "red" , fontWeight : "bold" , fontSize : 20}}>Register</Text>
 </Button>
     </View>
