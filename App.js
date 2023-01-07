@@ -7,10 +7,16 @@ import Cap from "./assets/comp/Text";
 import Container from "./assets/comp/Container";
 
 import { useFonts } from 'expo-font';
+// import { ReactQueryDevtools } from '@react-query/devtools'
+import { QueryClient ,  QueryClientProvider } from 'react-query'
+
+
 
 
 
 const App = () => {
+
+  const client = new QueryClient()
 
   const [fontsLoaded] = useFonts({
     'PTSans-Bold': require('./assets/PTSans-Bold.ttf'),
@@ -21,12 +27,18 @@ const App = () => {
 
   return (
 
-    fontsLoaded && <NativeBaseProvider>
+    fontsLoaded && <QueryClientProvider client={client}>
+
+    <NativeBaseProvider>
+
 
     <Container/>
+   
 
 
     </NativeBaseProvider>
+</QueryClientProvider>
+
     
 
     
